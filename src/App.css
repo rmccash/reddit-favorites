@@ -1,0 +1,162 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+/* Search Bar styling */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+/* Post list styling - single column layout */
+.post-list {
+  display: block; /* Changes from grid to block (one item per row) */
+  margin-bottom: 30px;
+}
+
+.post-item {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Adds spacing between posts */
+}
+
+.post-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.post-item p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.post-item a {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.post-item a:hover {
+  text-decoration: underline;
+}
+
+.post-item button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.post-item button:hover {
+  background-color: #218838;
+}
+
+/* Favorite list styling */
+.favorite-list {
+  display: block;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.favorite-post {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.favorite-post h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.favorite-post a {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.favorite-post a:hover {
+  text-decoration: underline;
+}
+
+.favorite-post button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.favorite-post button:hover {
+  background-color: #c82333;
+}
+
+/* Empty state message styling */
+.favorite-list p {
+  font-size: 1.2rem;
+  color: #777;
+}
