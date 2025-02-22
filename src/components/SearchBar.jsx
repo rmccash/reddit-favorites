@@ -1,23 +1,37 @@
 import React, { useState } from "react";
 
 const SearchBar = ({ setSubreddit }) => {
-  const [input, setInput] = useState("");
+  const [inputValue, setInputValue] = useState("r/");
 
-  const handleSearch = (e) => {
+  const handleChange = (e) => {
+    const value = e.target.value;
+
+    // Prevent users from deleting "r/"
+    if (!value.startsWith("r/")) {
+      setInputValue("r/");
+    } else {
+      setInputValue(value);
+    }
+  };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    if (input.trim() !== "") {
-      setSubreddit(input);
+    const subredditName = inputValue.replace(/^r\//, "").trim();
+    if (subredditName !== "") {
+      setSubreddit(subredditName);
     }
   };
 
   return (
-    <form onSubmit={handleSearch} className="search-bar">
-      <input
-        type="text"
-        placeholder="Enter subreddit... "
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-      />
+    <form onSubmit={handleSubmit} className="search-bar">
+      <div className="input-wrapper">
+        <input
+          type="text"
+          value={inputValue}
+          onChange={handleChange}
+          placeholder="Gaming"
+        />
+      </div>
       <button type="submit">Search</button>
     </form>
   );
