@@ -10,7 +10,7 @@ const PostList = ({ posts, setFavorites }) => {
   return (
     <div className="post-list">
       <h2>Top Posts</h2>
-      {posts.length === 0 ? <p>No posts found.</p> : (
+      {posts.length === 0 ? <p>This community doesn't have any posts yet</p> : (
         posts.map((post) => (
           <div key={post.id} className="post-item">
             <h3>{post.title}</h3>
