@@ -1,9 +1,17 @@
+
+//FileName:     PostList.jsx
+//Assignment:   Assignment 01
+//Author:       Rhys McCash
+//Student #:    8825169
+//Date:         02/21/2025
+//Description:  This component displays the top 10 posts from a subreddit and allows users to add posts to their favorites.
+
 import React from "react";
 import { saveToFavorites } from "../utils/localStorage";
 
 const PostList = ({ posts, setFavorites }) => {
   const addFavorite = (post) => {
-    saveToFavorites(post);  // Save the entire post object
+    saveToFavorites(post);
     setFavorites((prev) => [...prev, post]);
   };
 

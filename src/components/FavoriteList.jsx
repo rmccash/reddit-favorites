@@ -1,3 +1,11 @@
+
+//FileName:     FavoriteList.jsx
+//Assignment:   Assignment 01
+//Author:       Rhys McCash
+//Student #:    8825169
+//Date:         02/21/2025
+//Description:  This component displays the user's favorite posts and allows them to remove posts from the list.
+
 import React from "react";
 import { removeFromFavorites } from "../utils/localStorage";
 

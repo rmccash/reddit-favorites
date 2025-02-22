@@ -1,3 +1,11 @@
+
+//FileName:     App.jsx
+//Assignment:   Assignment 01
+//Author:       Rhys McCash
+//Student #:    8825169
+//Date:         02/21/2025
+//Description:  This file is responsible for managing the main application state, fetching subreddit posts, and handling user favorites.
+
 import React, { useState, useEffect } from "react";
 import SearchBar from "./components/SearchBar";
 import PostList from "./components/PostList";
@@ -6,7 +14,7 @@ import { getFavorites, fetchFavoritePosts } from "./utils/localStorage";
 import "./App.css";
 
 const App = () => {
-  const [subreddit, setSubreddit] = useState("gaming");
+  const [subreddit, setSubreddit] = useState("Software");
   const [posts, setPosts] = useState([]);
   const [favorites, setFavorites] = useState([]);
 

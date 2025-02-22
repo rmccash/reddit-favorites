@@ -1,3 +1,4 @@
+
 /* General styling */
 body {
   font-family: Arial, sans-serif;
@@ -57,9 +58,9 @@ h2 {
   background-color: #0056b3;
 }
 
-/* Post list styling - single column layout */
+/* Post list styling */
 .post-list {
-  display: block; /* Changes from grid to block (one item per row) */
+  display: block;
   margin-bottom: 30px;
 }
 
@@ -69,7 +70,7 @@ h2 {
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px; /* Adds spacing between posts */
+  margin-bottom: 20px;
 }
 
 .post-item h3 {

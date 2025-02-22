@@ -1,3 +1,11 @@
+
+//FileName:     SearchBar.jsx
+//Assignment:   Assignment 01
+//Author:       Rhys McCash
+//Student #:    8825169
+//Date:         02/21/2025
+//Description:  This component allows users to search for a subreddit, ensuring "r/" is always included in the input.
+
 import React, { useState } from "react";
 
 const SearchBar = ({ setSubreddit }) => {
@@ -6,10 +14,13 @@ const SearchBar = ({ setSubreddit }) => {
   const handleChange = (e) => {
     const value = e.target.value;
 
-    // Prevent users from deleting "r/"
-    if (!value.startsWith("r/")) {
+    //Prevent users from deleting "r/"
+    if (!value.startsWith("r/")) 
+    {
       setInputValue("r/");
-    } else {
+    } 
+    else 
+    {
       setInputValue(value);
     }
   };
@@ -17,7 +28,8 @@ const SearchBar = ({ setSubreddit }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const subredditName = inputValue.replace(/^r\//, "").trim();
-    if (subredditName !== "") {
+    if (subredditName !== "") 
+    {
       setSubreddit(subredditName);
     }
   };
