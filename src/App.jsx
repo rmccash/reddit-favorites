@@ -25,7 +25,7 @@ const App = () => {
 
   const fetchPosts = async (subreddit) => {
     try {
-      const response = await fetch(`https://www.reddit.com/r/${subreddit}/hot.json?limit=10`);
+      const response = await fetch(`https://www.reddit.com/r/${subreddit}/hot.json?limit=9`);
       const data = await response.json();
       const posts = data.data.children.map((post) => ({
         id: post.data.id,
